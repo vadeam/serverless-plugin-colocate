@@ -111,7 +111,7 @@ class ServerlessPluginColocate {
     printEffectiveConfig() {
 
         const effectiveServiceConfig = {};
-        const fieldsToOutput = ["custom", "functions", "layers", "package", "provider", "resources", "service"];
+        const fieldsToOutput = ["service", "custom", "provider", "package", "functions", "layers", "stepFunctions", "resources"];
 
         fieldsToOutput.forEach(fieldName => {
             let fieldValue = this.serverless.service[fieldName];
